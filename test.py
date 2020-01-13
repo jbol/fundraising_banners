@@ -47,7 +47,7 @@ class LoginForm(unittest.TestCase):
             #self.driver.find_element_by_css_selector('body > div > div > div > div > form > div.form-actions > button').click()
 
             elem = WebDriverWait(self.driver, 10).until(
-                EC.presence_of_element_located((By.XPATH, '//*[@id=\"logged-in-message\"]/h2'))
+                EC.presence_of_element_located((By.XPATH, '//*[@class=\"frb-message\"]/'))
             )
 
             #welcomeText = elem.text
