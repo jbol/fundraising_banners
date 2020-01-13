@@ -45,7 +45,7 @@ class LoginForm(unittest.TestCase):
             #self.driver.find_element_by_name('username').send_keys('tester@crossbrowsertesting.com')
             #self.driver.find_element_by_name('password').send_keys('test123')
             self.driver.find_element_by_id('frb-amt-ps1').click()
-            self.driver.find_element_by_id('frb-pm-cc').click()
+            self.driver.find_element_by_css_selector('.frb-cc-logo-discover > path:nth-child(2)').click()
 
             #elem = WebDriverWait(self.driver, 10).until(
             #    EC.presence_of_element_located((By.XPATH, '/html/body/div[3]/div[1]/div/div[2]/div/div[1]/div[1]/span[1]/span'))
