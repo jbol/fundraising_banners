@@ -21,7 +21,7 @@ class LoginForm(unittest.TestCase):
 
         caps = {}
 
-        caps['name'] = 'Github Actions - CBT'
+        caps['name'] = 'Github Actions - with CBT'
         caps['browserName'] = 'Chrome'
         caps['platform'] = 'Windows 10'
         caps['screenResolution'] = '1366x768'
