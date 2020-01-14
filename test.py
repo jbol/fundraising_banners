@@ -29,6 +29,14 @@ class LoginForm(unittest.TestCase):
         caps['password'] = self.authkey
         caps['record_video'] = 'true'
 
+        caps['name'] = 'Screenshot Test - Mac OS'
+        caps['browserName'] = 'Safari'
+        caps['platform'] = 'Mac 10.13'
+        caps['screenResolution'] = '1366x768'
+        caps['username'] = self.username
+        caps['password'] = self.authkey
+        caps['record_video'] = 'true'
+
         self.driver = webdriver.Remote(
             desired_capabilities=caps,
             #command_executor="http://%s:%s@hub.crossbrowsertesting.com:80/wd/hub"%(self.username,self.authkey)
